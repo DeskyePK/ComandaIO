@@ -1,0 +1,44 @@
+body {
+    
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    background-image: url("../Images/backgroundcrud.jpg");
+
+}
+
+#btnVoltar img {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+  }
+  
+.GestorBox{
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px;
+    color: white;
+     border-radius: 20px;
+  }
+  button {
+    background-color: #4CAF50;
+    color: black;
+    padding: 12px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+    width: 100%;
+    }
+    
+    @media only screen and (max-width: 600px) {
+
+      #btnVoltar img{
+        display: none;
+      }
+    }

@@ -1,0 +1,77 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    background-image: url("../Images/backgroundcrud.jpg");
+    color: white;
+    text-align: center;
+
+        background-repeat: no-repeat;
+
+    background-size:cover;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 20px;
+        border-radius: 10px;
+        margin: auto;
+        width: 50%;
+        color: white;
+    }
+
+input[type=text], input[type=date], input[type=number], input[type=float] {
+    padding: 5px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+input[type=submit], input[type=reset] {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    cursor: pointer;
+}
+
+input[type=submit]:hover, input[type=reset]:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+}
+
+button {
+    background-color: #4CAF50;
+    color: black;
+    padding: 12px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+    }
+
+    @media (max-width: 768px) {
+        body {
+            background-repeat: repeat;
+          }
+        form {
+          width: 90%; /* Reduz a largura do formulário */
+        }
+        input[type=text], input[type=date], input[type=number], input[type=float] {
+          width: 80%; /* Reduz a largura dos campos de entrada */
+        }
+      }

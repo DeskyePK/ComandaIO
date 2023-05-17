@@ -1,0 +1,272 @@
+/* Estilização da tabela */
+body {
+    
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url("../Images/fundomesa.png");
+  
+    background-size:cover;
+    line-height: 1.5;
+  
+  }
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color:rgba(0, 0, 0, 0.9);
+      margin-bottom: 20px;
+      
+  
+    }
+    
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: overline;
+    }
+  
+/* Estilização da navegação */
+nav {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Estilização da tabela */
+table {
+  font-family: Arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #fff;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+table th {
+  background-color: #333;
+  color: #fff;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Estilização dos botões */
+button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+button:hover {
+  background-color: whitesmoke;
+  color: #333;
+}
+
+#removero{
+  width: 100%;width: 100%;
+}
+
+.finalizar-pedido {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none; 
+  font-size: 16px; 
+  float: right;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.finalizar-pedido:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Estilização do subtotal */
+.subtotal {
+  font-weight: bold;
+  text-align: right;
+  margin-top: 16px;
+  margin-right: 8px;
+  font-size: 20px;
+}
+
+.subtotal span {
+  color: #04AA6D;
+}
+
+/* Estilização do carrinho vazio */
+.carrinho-vazio {
+  text-align: center;
+  margin-top: 16px;
+  font-style: italic;
+  color: #555;
+  font-size: 18px;
+}
+
+
+.pop-up {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  align-items: center;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.pop-up-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  align-items: center;
+}
+
+.pop-up-close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.pop-up-close:hover,
+.pop-up-close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.desconto-button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.aplicar-desconto {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.descontot {
+  color: whitesmoke;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+
+}
+
+
+@media (max-width: 600px) {
+
+  /* Altera o tamanho da fonte do body para dispositivos móveis */
+  body {
+    font-size: 16px;
+  }
+
+  /* Torna a navegação vertical em telas pequenas */
+  nav {
+    flex-direction: column;
+    height: auto;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav li {
+    margin: 5px 0;
+  }
+
+  /* Adapta o tamanho dos botões para dispositivos móveis */
+
+
+
+  /* Adapta a tabela para dispositivos móveis */
+  table th, table td {
+    padding: 5px;
+    font-size: 12px;
+  }
+
+  table th {
+    font-size: 14px;
+  }
+
+  /* Adapta o subtotal para dispositivos móveis */
+  .subtotal {
+    font-size: 16px;
+  }
+
+  /* Adapta o carrinho vazio para dispositivos móveis */
+  .carrinho-vazio {
+    font-size: 16px;
+  }
+
+  /* Adapta o tamanho da pop-up para dispositivos móveis */
+  .pop-up-content {
+    width: 80%;
+  }
+
+  /* Adapta o tamanho do botão de desconto para dispositivos móveis */
+  .desconto-button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}

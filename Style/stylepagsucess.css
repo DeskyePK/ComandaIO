@@ -1,0 +1,104 @@
+/* Estilos padrão para todas as telas */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: url("https://cdn.sympli.io/bundles/5d1b9ed7b372b0013aafea95/650e14de1d69822f3f33f224df8983e3ccc354a751/bundle/web/bg_3.png");
+  text-align: center;
+}
+
+h1 {
+  color: #4CAF50;
+  font-size: 50px;
+  margin-top: 50px;
+}
+
+p {
+  font-size: 30px;
+  margin-top: 30px;
+  color: #f2f2f2;
+}
+
+form {
+  display: inline-block;
+  margin-top: 50px;
+}
+
+label {
+  display: block;
+  color: #4CAF50;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+input[type=email] {
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  background-color: #f2f2f2;
+  width: 300px;
+}
+
+button[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#loading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.progress-bar {
+  width: 200px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #ccc;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background-color: #4CAF50;
+  width: 0%;
+  transition: width 0.5s ease-in-out;
+}
+
+
+button[type=submit]:hover {
+  background-color: #3e8e41;
+}
+
+/* Estilos para dispositivos móveis */
+@media only screen and (max-width: 600px) {
+
+  h1 {
+    font-size: 40px;
+    margin-top: 30px;
+  }
+
+  p {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  input[type=email] {
+    width: 80%;
+    max-width: 300px;
+    font-size: 16px;
+  }
+
+  button[type=submit] {
+    font-size: 20px;
+    padding: 8px 16px;
+  }
+
+}

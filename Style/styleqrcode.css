@@ -1,0 +1,255 @@
+* {
+	box-sizing: border-box;
+  }
+  html, body {
+	height: 100%;
+  }
+  body {
+	margin: 0;
+  }
+
+  .qrpay-container {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	background: url("https://cdn.sympli.io/bundles/5d1b9ed7b372b0013aafea95/650e14de1d69822f3f33f224df8983e3ccc354a751/bundle/web/bg_3.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+  }
+  .qrpay-container .logo-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-grow: 1;
+	padding: 52px 32px;
+  }
+  .qrpay-container .logo-container .urpay-logo {
+	width: 192px;
+	object-fit: cover;
+  }
+  .qrpay-container .content-container {
+	display: flex;
+	flex-wrap: wrap;
+	flex-grow: 2;
+	font-family: "Varela Round";
+	justify-content: center;
+	align-self: flex-start;
+	margin: 0 auto;
+  }
+  .qrpay-container .content-container .payment-info {
+	align-self: flex-start;
+  }
+  .qrpay-container .content-container .payment-info .payment-info-panel {
+	padding: 32px 48px;
+	position: relative;
+	margin-bottom: 12px;
+  }
+  .qrpay-container .content-container .payment-info .payment-info-panel:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(255, 255, 255, 0.01);
+	border-radius: 32px;
+	filter: blur(5px);
+  }
+  .qrpay-container .content-container .payment-info .payment-info-panel .product-name, .qrpay-container .content-container .payment-info .payment-info-panel .product-description {
+	color: white;
+  }
+  .qrpay-container .content-container .payment-info .payment-info-panel .product-name {
+	font-size: 42px;
+	margin-bottom: 18px;
+  }
+  .qrpay-container .content-container .payment-info .payment-info-panel .product-description {
+	font-size: 20px;
+	overflow: ellipsis;
+	white-space: no-wrap;
+	max-width: 600px;
+  }
+  .qrpay-container .content-container .payment-info .payment-info-panel .costumer-profile {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 48px;
+  }
+  .qrpay-container .content-container .payment-info .payment-info-panel .costumer-profile .costumer-avatar {
+	object-fit: cover;
+	width: 164px;
+	border-radius: 50%;
+	margin-right: 24px;
+	user-select: none;
+  }
+  .qrpay-container .content-container .payment-info .payment-info-panel .costumer-profile .costumer-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+  }
+  .qrpay-container .content-container .payment-info .payment-info-panel .costumer-profile .costumer-info .costumer-name {
+	font-size: 32px;
+	font-weight: bold;
+	color: white;
+  }
+  .qrpay-container .content-container .payment-info .payment-info-panel .costumer-profile .costumer-info .costumer-nickname {
+	font-size: 24px;
+	color: rgba(255, 255, 255, 0.5);
+  }
+  .qrpay-container .content-container .payment-info .instruction-container {
+	position: relative;
+	padding: 24px;
+	text-align: center;
+  }
+
+
+  .qrpay-container .content-container .payment-info .instruction-container p {
+	margin: 0;
+  }
+
+  .qrpay-container .content-container .payment-info .instruction-container p .bold-text {
+	font-size: 18px;
+	color: white;
+	margin-right: 6px;
+  }
+
+  .qrpay-container .content-container .payment-info .instruction-container p .normal-text {
+	font-size: 18px;
+	color: rgba(255, 255, 255, 0.5);
+  }
+
+  
+
+  .qrpay-container .content-container .payment-qrcode .payment-qrcode-panel {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-self: flex-start;
+	position: relative;
+	padding: 32px 48px;
+	margin: 12px 0 24px;
+	text-align: center;
+  }
+  .qrpay-container .content-container .payment-qrcode .payment-qrcode-panel .scan-msg {
+	font-size: 20px;
+	color: rgba(255, 255, 255, 0.5);
+  }
+  .qrpay-container .content-container .payment-qrcode .payment-qrcode-panel .payment-price {
+	color: #1fac3c;
+	margin: 24px 0;
+  }
+  .qrpay-container .content-container .payment-qrcode .payment-qrcode-panel .payment-price .currency-sign {
+	font-size: 34px;
+  }
+  .qrpay-container .content-container .payment-qrcode .payment-qrcode-panel .payment-price .price {
+	font-size: 54px;
+  }
+  .qrpay-container .content-container .payment-qrcode .payment-qrcode-panel .qrcode {
+	object-fit: cover;
+	width: 192px;
+
+  }
+  .qrpay-container .content-container .payment-qrcode .instruction-container-mobile {
+	display: none;
+	position: relative;
+	padding: 24px;
+	text-align: center;
+  }
+  .qrpay-container .content-container .payment-qrcode .instruction-container-mobile:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(255, 255, 255, 0.02);
+	border-radius: 32px;
+	filter: blur(5px);
+  }
+  .qrpay-container .content-container .payment-qrcode .instruction-container-mobile p {
+	margin: 0;
+  }
+  .qrpay-container .content-container .payment-qrcode .instruction-container-mobile p .bold-text {
+	font-size: 18px;
+	color: white;
+	margin-right: 6px;
+  }
+  .qrpay-container .content-container .payment-qrcode .instruction-container-mobile p .normal-text {
+	font-size: 18px;
+	color: rgba(255, 255, 255, 0.5);
+  }
+  .qrpay-container .footer-container {
+	text-align: center;
+  }
+  .qrpay-container .copyright-text {
+	font-family: "Varela Round";
+	color: white;
+  }
+
+  button {
+	font-size: 20px;
+	padding: 10px 20px;
+	background-color: #007bff;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	margin-top: 20px;
+	cursor: pointer;
+	transition: background-color 0.2s ease;
+  }
+
+
+  button:hover {
+	background-color: #0069d9;
+  }
+
+  @media only screen and (max-width: 600px) {
+	.qrpay-container {
+		flex-direction: column;
+		min-height: 100%;
+		background: url("https://cdn.sympli.io/bundles/5d1b9ed7b372b0013aafea95/650e14de1d69822f3f33f224df8983e3ccc354a751/bundle/web/bg_3.png");
+		background-size: cover;
+	  }
+	  .comandapay-logo {
+		width: 100%;
+	  }
+
+
+	/* Estilos para o painel de informações do pagamento */
+	.qrpay-container .payment-info-panel {
+	  padding: 16px;
+	  margin-bottom: 8px;
+	}
+  
+	/* Estilos para o perfil do cliente */
+	.qrpay-container .costumer-profile {
+	  margin-top: 24px;
+	}
+  
+	/* Estilos para o painel do código QR */
+	.qrpay-container .payment-qrcode-panel {
+	  padding: 16px;
+	  margin: 8px 0 12px;
+	}
+  
+	/* Estilos para o texto de instrução */
+	.qrpay-container .instruction-container p {
+	  font-size: 14px;
+	}
+  
+	/* Estilos para o texto em negrito */
+	.qrpay-container .instruction-container p .bold-text {
+	  font-size: 14px;
+	  margin-right: 4px;
+	}
+  
+	/* Estilos para o texto normal */
+	.qrpay-container .instruction-container p .normal-text {
+	  font-size: 14px;
+	}
+  
+  }

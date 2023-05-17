@@ -1,0 +1,17 @@
+{
+"name":"comandaio/pix",
+"autoload": {
+    "psr-4": {
+        "App\\":"app/"
+    }
+},
+    "require": {
+        "gerencianet/gerencianet-sdk-php": "^5.1",
+        "mpdf/qrcode": "^1.2",
+        "tecnickcom/tcpdf": "^6.6",
+        "dompdf/dompdf": "^2.0",
+        "google/apiclient": "^1.1",
+        "twilio/sdk": "^7.3",
+        "phpmailer/phpmailer": "^6.8"
+    }
+}

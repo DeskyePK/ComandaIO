@@ -1,0 +1,88 @@
+body {
+    background-image: url('https://cdn.leonardo.ai/users/20ff5e22-502c-4886-acd0-5a2d7d7edcd6/generations/c7e6e525-b9df-4b2e-9241-200966d15c68/Leonardo_Diffusion_bar_kitchen_with_orange_lighting_realistic_3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(5px);
+  }
+
+table {
+    border-collapse: collapse;
+    margin: 20px auto;
+    font-size: 1.1em;
+    font-family: sans-serif;
+    min-width: 400px;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    
+  }
+  
+  table td:first-child, table th:first-child {
+    display: none;
+  }
+  
+  th {
+    background-color: #B0C4DE;
+    color: #000;
+    font-weight: bold;
+    text-align: left;
+    padding: 12px;
+  }
+  
+  td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  button {
+    background-color: red;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #4CAF50;
+    cursor: pointer;
+  }
+  
+  tr:hover {
+    background-color: #F5F5F5;
+  }
+
+  .nao {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  @media only screen and (max-width: 600px) {
+    
+    table {
+      min-width: 100%;
+      margin: 10px 0;
+   
+  }
+  
+  body {
+    background-image: url('https://cdn.leonardo.ai/users/20ff5e22-502c-4886-acd0-5a2d7d7edcd6/generations/c7e6e525-b9df-4b2e-9241-200966d15c68/Leonardo_Diffusion_bar_kitchen_with_orange_lighting_realistic_3.jpg');
+    background-repeat: repeat;
+    background-size: cover;
+    backdrop-filter: blur(5px);
+}
+
+table {
+    font-size: 10px;
+    font-family: sans-serif;
+    background-color: #fff;
+    overflow-x: auto;
+}
+
+table td:first-child, table th:first-child {
+    display: none;
+}
+}

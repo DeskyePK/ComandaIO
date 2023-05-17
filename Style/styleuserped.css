@@ -1,0 +1,111 @@
+body {
+
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url("../Images/fundomesa.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    line-height: 1.5;
+  
+  
+  }
+  
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 15px;
+    
+  }
+  ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color:rgba(0, 0, 0, 0.9);
+      margin-bottom: 20px;
+      
+  
+    }
+    
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: overline;
+    }
+  
+  h1 {
+    color: whitesmoke;
+    text-align: center;
+    -webkit-text-stroke: 1px black; /* para navegadores WebKit */
+    -text-stroke: 1px black;
+    margin-top: 50px;
+    margin-bottom: 50px;
+ 
+  }
+  
+  .table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 700px;
+    background-color: #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  
+  
+  .table thead tr {
+    background-color: #4CAF50;
+    color: white;
+    text-align: left;
+    font-size: 18px;
+  }
+  
+  .table th,
+  .table td {
+    padding: 12px 15px;
+  }
+  
+  .table tbody tr {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+  
+  .table tbody tr:last-of-type {
+    border-bottom: 2px solid #4CAF50;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .table {
+      font-size: 14px;
+    }
+    .table thead {
+      display: none;
+    }
+    .table tbody tr {
+      display: block;
+      margin-bottom: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+    .table tbody tr:last-of-type {
+      margin-bottom: 0;
+    }
+    .table tbody td {
+      display: block;
+      text-align: center;
+    }
+    .table tbody td:before {
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
